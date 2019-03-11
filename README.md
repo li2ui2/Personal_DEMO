@@ -7,7 +7,8 @@
   
 *1.Tensor中形状的概念*  
 形状分为静态形状和动态形状。对于静态形状来说，一旦张量形状固定了呃，不能再次设置静态形状，并且不能跨纬度修改，只能1D->1D，2D->2D等。对于动态形状来说，可以去
-创建一个新的张量，改变时候一定要注意元素数量匹配，可进行跨纬度修改，如1D->2D，1D->3D等。  
+创建一个新的张量，改变时候一定要注意元素数量匹配，可进行跨纬度修改，如1D->2D，1D->3D等。 
+  
 *2.变量的创建*  
 ```Python  
 tf.Variable(initial_value=None,name=None,trainable=True)  
@@ -27,4 +28,7 @@ tf.Variable(initial_value=None,name=None,trainable=True)
 *4.自定义命令行参数*  
 *5.可视化tensorboard的一些操作*  
   
-  ### day_04.py
+### day_05.py  
+该py模块下，是关于tensorflow中的线程队列和IO操作的一些demo，包括：模拟同步数据的处理、模拟异步子线程、csv文件的读取、图片文件的读取
+、二进制文件的读取以及tensorflow自带的文件格式TFRcord文件的使用。  
+**NT:** TFRecord是一种二进制文件，写入内容为Example协议快，该协议块是一种类字典的格式。
