@@ -4,10 +4,10 @@
 ### day_04.py
 该py模块下主要是关于Tensorflow中的一些基本操作，包括图和会话、张量和基本运算以及变量和模型的保存加载。同时，主要以自实现一个线性回归预测为例，讲解了tensorflow中的这些基本操作的使用方法。下面
 给出学习过程中的一些重点笔记：  
-**1.Tensor中形状的概念**  
+*1.Tensor中形状的概念*  
 形状分为静态形状和动态形状。对于静态形状来说，一旦张量形状固定了呃，不能再次设置静态形状，并且不能跨纬度修改，只能1D->1D，2D->2D等。对于动态形状来说，可以去
 创建一个新的张量，改变时候一定要注意元素数量匹配，可进行跨纬度修改，如1D->2D，1D->3D等。  
-**2.变量的创建**  
+*2.变量的创建*  
 ```Python  
 tf.Variable(initial_value=None,name=None,trainable=True)  
 ```  
@@ -22,6 +22,6 @@ tf.Variable(initial_value=None,name=None,trainable=True)
      sess.run(init_op)  
      print(sess.run(var))
 ```  
-**3.模型的保存和恢复**  
-**4.自定义命令行参数**  
-**5.可视化tensorboard的一些操作**
+*3.模型的保存和恢复*  
+*4.自定义命令行参数*  
+*5.可视化tensorboard的一些操作*
