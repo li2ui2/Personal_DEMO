@@ -10,7 +10,10 @@ tf.app.flags.DEFINE_integer("is_train", 1, "指定程序是预测还是训练")
 
 
 def full_connected():
-
+    """
+    简单的单层神经网络预测手写数字图片
+    :return: None
+    """
     # 获取真实的数据
     mnist = input_data.read_data_sets("./data/mnist/input_data/", one_hot=True)
 
