@@ -33,7 +33,9 @@ tf.Variable(initial_value=None,name=None,trainable=True)
 、二进制文件的读取以及tensorflow自带的文件格式TFRcord文件的使用。  
 **NT:** TFRecord是一种二进制文件，写入内容为Example协议快，该协议块是一种类字典的格式。  
   
-### day_06.py 
+### day_06.py  
+该py模块下，主要是关于实现单层(全连接层)实现手写数字识别的demo
+  
 1.感知机模型  
 感知机是用来解决分类问题的。有n个输入数据，通过权重与各数据之间的计算和，比较激励函数结果，
 得到输出(设定阈值来进行分类)。**应用:** 很容易解决与、或问题。  
