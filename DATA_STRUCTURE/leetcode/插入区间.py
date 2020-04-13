@@ -1,0 +1,26 @@
+def insert(intervals, newInterval):
+    new_start, new_end = newInterval
+    idx, n = 0, len(intervals)
+    output = []
+    while idx < n and new_start > intervals[idx][0]:
+        output.append(intervals[idx])
+        idx += 1
+    if not output or output[-1][1] < new_start:
+        output.append(newInterval)
+    else:
+        output[-1][1] = max(output[-1][1], new_end)
+    while idx < n:
+        interval = intervals[idx]
+        start, end = interval
+        idx += 1
+        if output[-1][1] < start:
+            output.append(interval)
+        else:
+            output[-1][1] = max(output[-1][1], end)
+    return output
+
+
+if __name__ == '__main__':
+    intervals = [[1, 3], [6, 9]]
+    newInterval = [2, 5]
+    print(insert(intervals, newInterval))

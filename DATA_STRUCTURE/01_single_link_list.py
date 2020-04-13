@@ -126,5 +126,5 @@ if __name__ == "__main__":
     ll.remove(9)
     ll.travel()
     ll.remove(200)
-    # ll.travel()
+    ll.travel()
 

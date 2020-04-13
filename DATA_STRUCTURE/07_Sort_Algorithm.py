@@ -133,10 +133,10 @@ def main():
     # print("插入排序结果：", li)
     # shell_sort(li)
     # print("希尔排序结果：", li)
-    # quick_sort(li, 0, len(li)-1)
-    # print("快速排序结果：", li)
-    result = merge_sort(li)
-    print("归并排序结果：", result)
+    quick_sort(li, 0, len(li)-1)
+    print("快速排序结果：", li)
+    # result = merge_sort(li)
+    # print("归并排序结果：", result)
 
 
 if __name__ == "__main__":
